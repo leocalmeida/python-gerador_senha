@@ -1,5 +1,6 @@
 import string
 import random
+import os
 
 letters = string.ascii_letters
 numbers = string.digits
@@ -26,20 +27,29 @@ def generate_passkey():
         y = random.randrange(0,len(deck[x]))
         passkey += deck[x][y]
     print("-------------------------")
-    print('Gerando a senhas...')
+    print('Gerando a senha...')
     print("-------------------------")
     
     return passkey + '\n'
 
 def txt_export(passkey):
-    pass
+    file = "senha_exportada.txt"
+        
+    with open(file, 'w', encoding="utf-8") as arquivo:
+        arquivo.write(passkey)
+    
+    absolute_path = os.path.abspath(file)
+    
+    print(f"Senha salva no arquivo!{absolute_path}")
+    
 
 
 def main():
     
     option = 9
+    passkey = ''
+    
     while option != 0:
-        passkey = ''
         
         print(menu)
         option = int(input("Digite a opção desejada:\n"))
@@ -55,7 +65,7 @@ def main():
             print("Saindo.....")
             break
         else:
-            print("invalid option")
+            print("Opcao Inválida")
     
     
 
