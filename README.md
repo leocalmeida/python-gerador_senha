@@ -24,3 +24,9 @@ cd gerador-senhas
 ```bash
 py *gerador-senhas.py*
 ````
+
+
+## 🛠️ Melhorias Futuras
+- Utilizar o módulo secrets no lugar de random para maior segurança.
+- Permitir exportar várias senhas em vez de sobrescrever o arquivo.
+---
