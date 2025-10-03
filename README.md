@@ -1,8 +1,26 @@
-# python-gerador_senha
-Gerador de Senhas Seguras (CLI)
+# 🔐 Gerador de Senhas Fortes
 
-Objetivo: Gerar senhas aleatórias fortes, com opções de tamanho e tipos de caracteres.
+Um simples **gerador de senhas seguras em Python**, feito para praticar conceitos de programação estruturada, modularização e manipulação de arquivos.
 
-Skills: random, argparse, boas práticas de CLI.
+## 📌 Funcionalidades
 
-Extra: Exportar para .txt.
+- Gera senhas fortes com **8, 10 ou 12 caracteres**.
+- As senhas são compostas por:
+  - Letras maiúsculas e minúsculas
+  - Números
+  - Caracteres especiais
+- Exporta a senha gerada para um arquivo `.txt`.
+- Menu interativo no terminal.
+
+## 🚀 Como usar
+
+### Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/gerador-senhas.git
+cd gerador-senhas
+```
+
+### Execute o arquivo
+```bash
+py *gerador-senhas.py*
+````
